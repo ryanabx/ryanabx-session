@@ -1,0 +1,9 @@
+[Unit]
+Description=ryanabx shell
+BindsTo=ryanabx-session.target
+After=ryanabx-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ryanabx-shell
+Restart=always

@@ -1,0 +1,12 @@
+[Unit]
+Description=Cosmic wayland compositor
+BindsTo=ryanabx-session.target
+Wants=ryanabx-session-pre.target
+After=ryanabx-session-pre.target
+Before=ryanabx-session.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/cosmic-comp
+Restart=never
+ExecStopPost=/usr/bin/systemctl --user unset-environment DISPLAY WAYLAND_DISPLAY

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Ryanabx
+Commment=This session logs you into Ryanabx
+Exec=/usr/bin/ryanabx-service
+Type=Application
+DesktopNames=RYANABX
+X-GDM-SessionRegisters=false
